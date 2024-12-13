@@ -1,3 +1,6 @@
+// Para rodar os testes:
+// npx hardhat test
+
 const { loadFixture } = require("@nomicfoundation/hardhat-toolbox/network-helpers");
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
@@ -89,22 +92,20 @@ describe("DescentralizedBet", function () {
       await betContract.connect(addr1).placeBet(1, 1, { value: ethers.parseEther("1") });
       await betContract.resolveEvent(1, 1);
 
-      // Deposit Ether to ensure the contract has enough funds for withdrawals
       await betContract.deposit({ value: ethers.parseEther("3") });
 
       const initialBalance = BigInt(await ethers.provider.getBalance(addr1.address));
 
-      // Execute the withdrawal transaction
       const tx = await betContract.connect(addr1).withdraw();
       console.log("User 1 executed the withdraw() function...");
 
-      const receipt = await tx.wait(1);  // Wait for 1 block confirmation
+      const receipt = await tx.wait(1);
 
       if (receipt) {
         const gasUsed = receipt.gasUsed;
         console.log(`Gas used in the transaction: ${gasUsed.toString()} units`);
 
-        const effectiveGasPrice = tx.gasPrice || receipt.effectiveGasPrice; // Compatibility with older versions
+        const effectiveGasPrice = tx.gasPrice || receipt.effectiveGasPrice;
         console.log(`Effective gas price: ${effectiveGasPrice.toString()} wei`);
 
         const gasCost = gasUsed * effectiveGasPrice;
@@ -113,7 +114,6 @@ describe("DescentralizedBet", function () {
         const finalBalance = BigInt(await ethers.provider.getBalance(addr1.address));
         console.log(`Final balance of User 1: ${finalBalance.toString()} wei`);
 
-        // Verifying the balance after withdrawal, considering the gas cost
         expect(finalBalance).to.equal(initialBalance + BigInt(ethers.parseEther("3")) - gasCost);
       } else {
         throw new Error("Transaction receipt not found");
