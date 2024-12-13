@@ -2,11 +2,11 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying Contracts with account: ", deployer.address);
 
-  const DecentralizedBet = await ethers.getContractFactory("DescentralizedBet");
-  const decentralizedBet = await DecentralizedBet.deploy();
+  const DescentralizedBet = await ethers.getContractFactory("DescentralizedBet");
+  const descentralizedBet = await DescentralizedBet.deploy();
 
-  await decentralizedBet.deployed();
-  console.log("DescentralizedBet deployed to:", decentralizedBet.address);
+  await descentralizedBet.deployed();
+  console.log("DescentralizedBet deployed to:", descentralizedBet.address);
 }
 
 main()
