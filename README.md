@@ -120,6 +120,11 @@
   O Ganache é uma ferramenta de desenvolvimento local que simula uma blockchain Ethereum, permitindo que os contratos inteligentes sejam testados em um ambiente controlado e seguro antes de implantá-los em uma rede real. Ele oferece uma rede privada e personalizável, onde é possível criar contas, minerar blocos e interagir com os contratos de forma rápida e eficiente. Combinado ao Hardhat, os desenvolvedores podem compilar seus contratos, executar testes unitários e interagir com eles diretamente no ambiente de desenvolvimento local do Ganache.
 </p>
 
+## 3.5 Web3:
+<p style="text-align: justify">
+  O Web3 refere-se a um conjunto de tecnologias e conceitos que visam descentralizar a web, permitindo que os usuários interajam diretamente com aplicativos e serviços sem depender de intermediários centralizados. No projeto o Web3 é a interface que permite a conexão com a BlockChain para que os usuários possam interagir com os contratos inteligentes e com a própria rede blockchain.
+</p>
+
 # 4. Resultados
 
 <p style="text-align: justify">
