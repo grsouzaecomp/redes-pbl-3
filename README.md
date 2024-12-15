@@ -199,7 +199,7 @@
 </div>
 
 <div align="center">
-  Figura 5: Chamamento do Contrato no momento em que o botão de "Criar Evento" é apertado.
+  Figura 5: Chamada do Contrato no momento em que o botão de "Criar Evento" é apertado.
 </div>
 
 ## 4.4. Desempenho:
