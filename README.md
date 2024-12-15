@@ -188,6 +188,20 @@
   Figura 4: Teste de Interface para Criação de Evento.
 </div>
 
+##
+
+<p style="text-align: justify">
+  E dentro do Ganache, também é recebido o feedback de que houve de fato um chamamento do contrato pela função. Como pode ser visualizado na imagem a seguir (Figura 5):
+</p>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/01b1b6fa-ece6-46d8-9f82-f4e282800761" width="700px"/>
+</div>
+
+<div align="center">
+  Figura 5: Chamamento do Contrato no momento em que o botão de "Criar Evento" é apertado.
+</div>
+
 ## 4.4. Desempenho:
 <p style="text-align: justify">
  O contrato foi projetado para otimizar custos de gas ao executar funções, garantindo um uso eficiente de recursos durante transações. O uso de ferramentas como 'loadFixture' e simulações de tempo contribuiu para um processo de teste mais rápido e eficiente.
