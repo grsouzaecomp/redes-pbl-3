@@ -174,6 +174,8 @@
   Figura 3: Imagem dos testes realizados por meio do hardhat para viabilizar o contrato inteligente 'DescentralizedBet.sol'. 
 </div>
 
+## 4.3. Testes de Interface
+
 <p style="text-align: justify">
   Nos teste manuais utilizando interface gráfica à partir do Next com integração por meio do Web3, apesar de problemas, ainda houveram resultados ao criar o evento "Cara ou Coroa" com a Odd de 0.02, como pode ser observado na figura a seguir (Figura 4).
 </p>
@@ -186,12 +188,12 @@
   Figura 4: Teste de Interface para Criação de Evento.
 </div>
 
-## 4.3. Desempenho:
+## 4.4. Desempenho:
 <p style="text-align: justify">
  O contrato foi projetado para otimizar custos de gas ao executar funções, garantindo um uso eficiente de recursos durante transações. O uso de ferramentas como 'loadFixture' e simulações de tempo contribuiu para um processo de teste mais rápido e eficiente.
 </p>
 
-## 4.4. Escalabilidade e Flexibilidade:
+## 4.5. Escalabilidade e Flexibilidade:
 <p style="text-align: justify">
  O sistema permite a criação de múltiplos eventos e apostas simultâneas, mostrando-se escalável para uso em ambientes reais.
 </p>
